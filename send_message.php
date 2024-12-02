@@ -64,6 +64,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
+        
+        // Получатель и отправитель
         // Получатель и отправитель
         $mail->setFrom('abbossmadmurotov010120011@gmail.com', 'Admin Panel');
         $mail->addAddress('abbossmadmurotov010120011@gmail.com', 'Admin Panel');
